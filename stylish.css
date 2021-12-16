@@ -1,52 +1,50 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
-p{
-    margin: 20px;
+p {
+  margin: 20px;
 }
-#lelien{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    margin-top: 10px;
-    margin-right: 20px;
-    float:right ;
+#lelien {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 20px;
+  float: right;
 }
-.firsttwo{
+.firsttwo {
+  display: flex;
+}
+
+@media only screen and (max-width: 479px) {
+  body {
+    background-color: #f38ba0;
+  }
+  .firsttwo {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  body {
+    background-color: #f38ba0;
+  }
+
+  #small {
+    flex: 2;
+  }
+
+  #medium {
+    flex: 1;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: #f38ba0;
+  }
+  .allofthem {
     display: flex;
-}
-
-@media only screen and (max-width:479px){
-    body{
-        background-color: #F38BA0;
-
-    }
-    .firsttwo{
-        flex-direction: column;
-    }
-    
-}
-
- @media only screen and (min-width: 480px) and (max-width:1023px){
-    body{
-        background-color: #F38BA0;
-
-    }
-
-        #small{
-            flex: 2;
-}
-
-        #medium{
-            flex:1;
-}
-}
-@media only screen and (min-width:1024px){
-    body{
-        background-color: #F38BA0
-    }
-    .allofthem{
-        display: flex;
-        flex-direction: row;
-    }
+    flex-direction: row;
+  }
 }
