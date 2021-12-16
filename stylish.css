@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+p{
+    margin: 20px;
+}
+.firsttwo{
+    display: flex;
+}
+
+@media only screen and (max-width:479px){
+    body{
+        background-color: #F38BA0;
+
+    }
+    .firsttwo{
+        flex-direction: column;
+    }
+    
+}
+
+ @media only screen and (min-width: 480px) and (max-width:1023px){
+    body{
+        background-color: #F38BA0;
+
+    }
+
+        #small{
+            flex: 2;
+}
+
+        #medium{
+            flex:1;
+}
+}
+@media only screen and (min-width:1024px){
+    body{
+        background-color: #F38BA0
+    }
+    .allofthem{
+        display: flex;
+        flex-direction: row;
+    }
+}
